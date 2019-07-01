@@ -31,7 +31,7 @@ namespace BusinessLogic
 
         public IEnumerable<Skill> GetUserSkill(int ID_user)
         {
-            return (IEnumerable < Skill > )skillDao.GetUserSkill(ID_user);
+            return skillDao.GetUserSkill(ID_user);
         }
 
         public void Remove(int ID)

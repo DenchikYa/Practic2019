@@ -28,3 +28,13 @@ C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Bussi
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\BussinessLogic.Interface\obj\Debug\BussinessLogic.Interface.csproj.CoreCompileInputs.cache
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\BussinessLogic.Interface\obj\Debug\BussinessLogic.Interface.exe
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\BussinessLogic.Interface\obj\Debug\BussinessLogic.Interface.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\bin\Debug\BussinessLogic.Interface.exe.config
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\bin\Debug\BussinessLogic.Interface.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\bin\Debug\BussinessLogic.Interface.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\bin\Debug\Entities.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\bin\Debug\Entities.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\bin\Debug\Entities.exe.config
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\obj\Debug\BussinessLogic.Interface.csprojResolveAssemblyReference.cache
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\obj\Debug\BussinessLogic.Interface.csproj.CoreCompileInputs.cache
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\obj\Debug\BussinessLogic.Interface.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\BussinessLogic.Interface\obj\Debug\BussinessLogic.Interface.pdb

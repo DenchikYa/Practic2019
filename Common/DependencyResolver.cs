@@ -18,14 +18,14 @@ namespace Common
         private static IUser userLogic;
         private static ISkill skillLogic;
         private static IUserDao userDao;
-        private static ISkillDao anwardDao;
+        private static ISkillDao skillDao;
 
         public static IUser UserLogic => userLogic ?? new UserLogic(UserDao);
 
-        public static ISkill SkillLogic => skillLogic ?? new SkillLogic(anwardDao);
+        public static ISkill SkillLogic => skillLogic ?? new SkillLogic(SkillDao);
 
         public static IUserDao UserDao => userDao ?? new UserDao(conStr);
 
-        public static ISkillDao AwardDao => AwardDao ?? new SkillDao(conStr);
+        public static ISkillDao SkillDao => skillDao ?? new SkillDao(conStr);
     }
 }

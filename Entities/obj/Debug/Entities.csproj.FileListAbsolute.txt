@@ -18,3 +18,10 @@ C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Entit
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Entities\bin\Debug\Entities.exe.config
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Entities\bin\Debug\Entities.exe
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Entities\bin\Debug\Entities.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\Entities\bin\Debug\Entities.exe.config
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\Entities\bin\Debug\Entities.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\Entities\bin\Debug\Entities.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\Entities\obj\Debug\Entities.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\Entities\obj\Debug\Entities.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache

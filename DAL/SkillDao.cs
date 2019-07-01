@@ -44,7 +44,6 @@ namespace DAL
         }
         public IEnumerable<Skill> GetUserSkill(int id_user)
         {
-            Console.Write("ASDASDASDASD");
             List<Skill> skills = new List<Skill>();
             using (var connection = new SqlConnection(_connectionString))
             {

@@ -17,10 +17,8 @@ namespace Entities
 
         public Skill()
         { }
-        public Skill(int id, int id_user, string name, string description, string type, DateTime dateCreate)
+        public Skill(int id_user, string name, string description, string type)
         {
-            ID = id;
-            DateCreate = dateCreate;
             ID_user = id_user;
             Name = name;
             Description = description;
@@ -29,7 +27,7 @@ namespace Entities
         }
         public override string ToString()
         {
-            return $"{ID}. Название: {Name} Описание: {Description} Тип: {Type}";
+            return $"{ID}. Название: {Name}\n Описание: {Description}\n Тип: {Type}\n";
         }
     }
 }

@@ -37,3 +37,16 @@ C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\DAL\o
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\DAL\obj\Debug\DAL.exe
 C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\DAL\obj\Debug\DAL.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\DAL.exe.config
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\DAL.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\DAL.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\DAL.Interface.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\Entities.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\DAL.Interface.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\DAL.Interface.exe.config
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\Entities.pdb
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\bin\Debug\Entities.exe.config
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\obj\Debug\DAL.exe
+C:\Users\Denchik.LAPTOP-OO5G0FJO\Desktop\Epam.Emelyanov.Task3\EPAM.Practic\Practic\DAL\obj\Debug\DAL.pdb

@@ -115,9 +115,7 @@ namespace DAL
                 cmd.CommandText = "findForLogin";
                 cmd.Parameters.AddWithValue(@"Login", Login);
                 connection.Open();
-
-                return  (int)cmd.ExecuteScalar();
-
+                if (cmd.ExecuteScalar() != null) return (int)cmd.ExecuteScalar(); else return 0;
             }
         }
 

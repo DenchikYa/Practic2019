@@ -26,7 +26,7 @@ namespace DAL
                 cmd.CommandText = "addSkill";
                 cmd.Parameters.AddWithValue(@"ID_user", value.ID_user);
                 cmd.Parameters.AddWithValue(@"name", value.Name);
-                cmd.Parameters.AddWithValue(@"description", value.Description);
+                cmd.Parameters.AddWithValue(@"desctiorion", value.Description);
                 cmd.Parameters.AddWithValue(@"type", value.Type);
                 cmd.Parameters.AddWithValue(@"date_creation", value.DateCreate);
 

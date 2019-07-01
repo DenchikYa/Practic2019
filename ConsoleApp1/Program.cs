@@ -71,8 +71,7 @@ namespace ConsoleApp1
             {
                 case "1":
                     Console.Clear();
-                    Console.WriteLine(userLogic.GetByID(ID));
-                    Back();
+                    UserProfile(userLogic.GetByID(ID));
                     break;
                 case "2":
                     Skills();
@@ -112,12 +111,21 @@ namespace ConsoleApp1
             {
                 Console.WriteLine($"{i+1}. Название: {list.ElementAt(i).Name}");
             }
-            Console.WriteLine("0.Назад");
-            Console.WriteLine("-1.Поиск");
+            Console.WriteLine("0.Назад \n-1.Поиск \n-2.Добавить навык");
             int j = int.Parse(Console.ReadLine());
-            if (j == 0) Menu();
-            if (j == -1) FindSkill();
-            SkillProfile(list.ElementAt(j-1));
+            switch (j)
+            {
+                case 0:
+                    Menu();
+                    break;
+                case -1:
+                    FindSkill();
+                    break;
+                case -2:
+                    AddSkill();
+                    break;
+            }
+            if (j > 0) SkillProfile(list.ElementAt(j - 1)); else Skills();
         }
         public static void SkillProfile(Skill skill)
         {
@@ -160,6 +168,34 @@ namespace ConsoleApp1
                     break;
             }
         }
+        public static void UserProfile(User user)
+        {
+            Console.Clear();
+            Console.WriteLine(user);
+            Console.WriteLine("1.Изменить ФИО \n2.Изменить Пароль \n0.Назад");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Console.Clear();
+                    Console.WriteLine("Введите новое ФИО: ");
+                    string name = Console.ReadLine();
+                    userLogic.EditFullName(ID,name);
+                    user.FullName = name;
+                    UserProfile(user);
+                    break;
+                case "2":
+                    Console.Clear();
+                    Console.WriteLine("Введите новый пароль: ");
+                    string pas = Console.ReadLine();
+                    userLogic.EditPassword(ID, pas);
+                    user.Password = pas;
+                    UserProfile(user);
+                    break;
+                case "0":
+                    Menu();
+                    break;
+            }
+        }
         public static void FindSkill()
         {
             Console.Clear();
@@ -173,6 +209,19 @@ namespace ConsoleApp1
             }
             int j = int.Parse(Console.ReadLine());
             SkillProfile(list.ElementAt(j - 1));
+        }
+        public static void AddSkill()
+        {
+            Console.Clear();
+            Console.WriteLine("Введите название:");
+            string Name = Console.ReadLine();
+            Console.WriteLine("Укажите описание:");
+            string desc = Console.ReadLine();
+            Console.WriteLine("Выберите тип Hard/Soft:");
+            string type = Console.ReadLine();
+
+            skillLogic.Add(new Skill(ID,Name, desc, type));
+            Skills();
         }
     }
 }

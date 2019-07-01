@@ -124,22 +124,37 @@ namespace DAL
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "editNameSkill";
                 cmd.Parameters.AddWithValue(@"ID", ID);
-                cmd.Parameters.AddWithValue(@"Description", Name);
+                cmd.Parameters.AddWithValue(@"Name", Name);
                 connection.Open();
                 cmd.ExecuteNonQuery();
             }
         }
-        public void findSkill(int Name)
+        public IEnumerable<Skill> findSkill(int ID_user, string Name)
         {
+            List<Skill> skills = new List<Skill>();
             using (var connection = new SqlConnection(_connectionString))
             {
                 var cmd = connection.CreateCommand();
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "findSkill";
+                cmd.Parameters.AddWithValue(@"ID", ID_user);
                 cmd.Parameters.AddWithValue(@"Name", Name);
                 connection.Open();
-                cmd.ExecuteNonQuery();
+                var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    skills.Add(new Skill
+                    {
+                        ID = (int)reader["ID"],
+                        ID_user = (int)reader["ID_user"],
+                        Name = (string)reader["name"],
+                        Description = (string)reader["description"],
+                        Type = (string)reader["type"],
+                        DateCreate = (DateTime)reader["date_creation"]
+                    });
+                }
             }
+            return skills;
         }
     }
 }

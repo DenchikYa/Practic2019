@@ -45,7 +45,7 @@ namespace Entities
 
         public override string ToString()
         {
-            return $"ФИО: {FullName}\n Дата Рождения: {DateOfBrith.ToShortDateString()}\n Возраст: {Age}\n Пол {Sex}\n";
+            return $"ФИО: {FullName}\nДата Рождения: {DateOfBrith.ToShortDateString()}\nВозраст: {Age}\nПол {Sex}\n";
         }
     }
 }

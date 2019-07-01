@@ -27,7 +27,7 @@ namespace Entities
         }
         public override string ToString()
         {
-            return $"{ID}. Название: {Name}\n Описание: {Description}\n Тип: {Type}\n";
+            return $"Название: {Name}\nОписание: {Description}\nТип: {Type}\n";
         }
     }
 }

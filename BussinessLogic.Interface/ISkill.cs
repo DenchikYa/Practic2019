@@ -20,6 +20,6 @@ namespace BussinessLogic.Interface
 
         void editName(int ID, string Name);
 
-        void findSkill(int Name);
+        IEnumerable<Skill> findSkill(int ID, string Name);
     }
 }

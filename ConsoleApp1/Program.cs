@@ -45,13 +45,15 @@ namespace ConsoleApp1
                     Console.Clear();
                     Console.WriteLine("Введите ФИО:");
                     string FullName = Console.ReadLine();
-                    Console.WriteLine("Введите дату рождения:");
-                    DateTime DateOfBrith = new DateTime(int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()), int.Parse(Console.ReadLine()));
+                    Console.WriteLine("Введите дату рождения (DD,MM,YYYY):");
+                    string[] date = Console.ReadLine().Split(',');
+
+                    DateTime DateOfBrith = new DateTime(int.Parse(date[2]), int.Parse(date[1]), int.Parse(date[0]));
                     Console.WriteLine("Укажите пол:");
                     string Sex = Console.ReadLine();
                     Console.WriteLine("Введите логин:");
                     string login = Console.ReadLine();
-                    checkLogin(ref login);
+                    CheckLogin(ref login);
                     Console.WriteLine("Введите пароль:");
                     string password = Console.ReadLine();
 
@@ -70,17 +72,10 @@ namespace ConsoleApp1
                 case "1":
                     Console.Clear();
                     Console.WriteLine(userLogic.GetByID(ID));
-                    back();
+                    Back();
                     break;
                 case "2":
-                    Console.Clear();
-                    Console.WriteLine("Навыки:");
-                    IEnumerable<Skill> list = skillLogic.GetUserSkill(ID);
-                    foreach(var s in list)
-                    {
-                        Console.WriteLine("Название: " + s.Name);
-                    }
-                    back();
+                    Skills();
                     break;
                 case "3":
                     Authorization();
@@ -88,17 +83,17 @@ namespace ConsoleApp1
                     break;
             }
         }
-        public static void checkLogin(ref string login)
+        public static void CheckLogin(ref string login)
         {
             if (!(userLogic.FindForLogin(login) < 1))
             {
                 Console.WriteLine("Логин занят!");
                 Console.WriteLine("Введите логин:");
                 login = Console.ReadLine();
-                checkLogin(ref login);
+                CheckLogin(ref login);
             }
         }
-        public static void back()
+        public static void Back()
         {
             Console.WriteLine("0.Назад");
             switch (Console.ReadLine())
@@ -107,6 +102,77 @@ namespace ConsoleApp1
                     Menu();
                     break;
             }
+        }
+        public static void Skills()
+        {
+            Console.Clear();
+            Console.WriteLine("Навыки \nВыберите навык:");
+            IEnumerable<Skill> list = skillLogic.GetUserSkill(ID);
+            for(int i = 0; i < list.Count(); i++)
+            {
+                Console.WriteLine($"{i+1}. Название: {list.ElementAt(i).Name}");
+            }
+            Console.WriteLine("0.Назад");
+            Console.WriteLine("-1.Поиск");
+            int j = int.Parse(Console.ReadLine());
+            if (j == 0) Menu();
+            if (j == -1) FindSkill();
+            SkillProfile(list.ElementAt(j-1));
+        }
+        public static void SkillProfile(Skill skill)
+        {
+            Console.Clear();
+            Console.WriteLine(skill);
+            Console.WriteLine("1.Изменить название \n2.Изменить описание \n3.Удалить \n0.Назад");
+            switch (Console.ReadLine())
+            {
+                case "1":
+                    Console.Clear();
+                    Console.WriteLine("Введите новое название: ");
+                    string name = Console.ReadLine();
+                    skillLogic.editName(skill.ID, name);
+                    skill.Name = name;
+                    SkillProfile(skill);
+                    break;
+                case "2":
+                    Console.Clear();
+                    Console.WriteLine("Введите новое описание: ");
+                    string desc = Console.ReadLine();
+                    skillLogic.editDescription(skill.ID, desc);
+                    skill.Description = desc;
+                    SkillProfile(skill);
+                    break;
+                case "3":
+                    Console.WriteLine("Вы действительно хотите удалить навык? Да/Нет");
+                    switch (Console.ReadLine())
+                    {
+                        case "Да":
+                            skillLogic.Remove(skill.ID);
+                            Skills();
+                            break;
+                        case "Нет":
+                            SkillProfile(skill);
+                            break;
+                    }
+                    break;
+                case "0":
+                    Skills();
+                    break;
+            }
+        }
+        public static void FindSkill()
+        {
+            Console.Clear();
+            Console.WriteLine("Введите название: ");
+            string name = Console.ReadLine();
+            Console.WriteLine("Навыки \nВыберите навык:");
+            IEnumerable<Skill> list = skillLogic.findSkill(ID,name);
+            for (int i = 0; i < list.Count(); i++)
+            {
+                Console.WriteLine($"{i + 1}. Название: {list.ElementAt(i).Name}");
+            }
+            int j = int.Parse(Console.ReadLine());
+            SkillProfile(list.ElementAt(j - 1));
         }
     }
 }

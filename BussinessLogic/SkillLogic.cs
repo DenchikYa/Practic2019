@@ -49,9 +49,9 @@ namespace BusinessLogic
             skillDao.editName(ID, Name);
         }
 
-        public void findSkill(int Name)
+        public IEnumerable<Skill> findSkill(int ID, string Name)
         {
-            skillDao.findSkill(Name);
+            return skillDao.findSkill(ID,Name);
         }
 
     }
